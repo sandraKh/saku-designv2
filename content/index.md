@@ -1,25 +1,26 @@
 ---
-title: "Min fina titel"
+title: "Om mig"
+
+views:
+    byline:
+        region: main
+        template: anax/v2/block/default
+        sort: 2
+        data:
+            meta:
+                type: single
+                route: block/byline
+
 ---
 Min me-sida i kursen design
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
+[FIGURE src="image/me.jpg?w=250" class="right"]
 
-[FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig"]
+Mitt namn är Sandra, jag kommer från Lund i Skåne. Flyttade till karlskrona för ungefär 4 år sedan för att börja studera Technical Artist. Tyvärr insåg jag lite senare att jag mest var intresserad av programmeringen och inte lika intresserad av grafiken. Hoppade av den utbildningen, men stannade kvar i Karlskona och har jobbat det senaste året.
 
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
+Hittade senare att BTH har denna utbildning webbprogrammering och tänkte direkt att det skulle passa mig. Mycket programmering, men inte jättemycket matte! Annars är programmering något som alltid har intresserat mig, då både min syster och pappa är utbildade inom snarlika områden. Alltså blir det en hel del snack om programmering när vi ses!
 
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
+Annars är mina intressen att spela datorspel, måla och träna. När jag ska koppla av tar jag gärna en fantasy-bok och läser.
 
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
-
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
-
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
-
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
-
-Vi syns och hörs i forum och chatt!
-
-/Mikael
+/Sandra
