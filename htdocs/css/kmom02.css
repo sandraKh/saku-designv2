@@ -4751,22 +4751,26 @@ template {
  */
 html {
   overflow-y: scroll;
-  background-color: #262b28;
+  background-color: white;
+  display: table;
   margin: auto;
 }
 body {
   color: #333;
   background-color: #fff;
   font: 100.01%/1 serif;
+  display: table-cell;
   vertical-align: middle;
   margin: 0;
   padding: 0;
 }
+html,
+body {
+  height: 100%;
+}
 main {
-  min-height: 50em;
+  min-height: 70em;
   margin-top: 0;
-  margin: 8px auto;
-  width: 1035px;
   padding: 2em;
   background-color: #e4d9c9;
 }
@@ -4775,9 +4779,6 @@ a {
 }
 img {
   max-width: 100%;
-}
-div {
-  display: block;
 }
 /**
  * A responsive menu.
@@ -5075,7 +5076,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   border-width: 1px;
   clear: both;
   overflow: auto;
-  margin-top: 20em;
+  margin-top: 40em;
 }
 .my-navbar a {
   display: inline-block;
@@ -5157,19 +5158,23 @@ h1 {
   display: inline;
   float: left;
   width: 30%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
 }
 .toc {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 24px;
+  background-color: #e4d9c9;
+}
+.toc h4 {
+  padding-top: 1em;
 }
 .region-sidebar-right {
   float: left;
   width: 100%;
   border-left: none;
+}
+.has-sidebar-right > .article {
+  width: 100%;
 }
 .my-navbar li {
   background-color: white;
@@ -5197,6 +5202,10 @@ h1 {
   .block {
     width: auto;
   }
+  .rm-desktop a {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
 }
 @media screen and (max-width: 850px) {
   .my-navbar {
@@ -5204,6 +5213,24 @@ h1 {
   }
   .columns {
     display: block;
+    border-style: none;
+  }
+  .footer-column-1 {
+    border-style: none;
+  }
+  .footer-column-3 {
+    border-style: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .region-sidebar-left,
+  .region-sidebar-right {
+    float: none;
+    margin-right: 0;
+    width: auto;
+    border: 0;
+    clear: both;
+    background-color: #e4d9c9;
   }
 }
 /**

@@ -25,7 +25,12 @@
     .block {
         width: auto;
     }
+    .rm-desktop a {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
 }
+
 
 @media screen and (max-width: 850px) {
     .my-navbar {
@@ -34,5 +39,23 @@
 
     .columns {
         display: block;
+        border-style: none;
     }
+    .footer-column-1 {
+        border-style: none;
+    }
+    .footer-column-3 {
+        border-style: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+   .region-sidebar-left, .region-sidebar-right {
+    float: none;
+    margin-right:0;
+    width:auto;
+    border:0;
+    clear: both;
+    background-color: #e4d9c9;
+  }
 }
