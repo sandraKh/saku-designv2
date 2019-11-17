@@ -1,0 +1,247 @@
+/*!
+ * LESS version of the stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+/**
+ * Style for the stylechooser.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+html {
+  overflow-y: scroll;
+  background-color: #262b28;
+  margin: auto;
+}
+body {
+  color: #333;
+  background-color: #fff;
+  font: 100.01%/1 serif;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+main {
+  min-height: 50em;
+  margin-top: 0;
+  margin: 8px auto;
+  width: 1035px;
+  padding: 2em;
+  background-color: #e4d9c9;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+div {
+  display: block;
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+/**
+ * General layout
+ */
+.inner-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.right {
+  float: right;
+}
+.byline_class {
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  clear: both;
+  overflow: auto;
+  margin-top: 20em;
+}
+.my-navbar a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: Black;
+}
+.my-navbar li {
+  display: inline-block;
+  padding: 2em;
+  text-decoration: none;
+}
+.my-navbar {
+  padding: 0.5em;
+  margin-bottom: 0;
+  margin-top: 1em;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+  border-top: solid;
+  border-color: grey;
+}
+.site-logo {
+  display: none;
+}
+.site-logo-text a {
+  font-size: 2em;
+  align-items: center;
+  text-decoration: none;
+  color: Black;
+  padding: 0.5em;
+  margin-bottom: 5em;
+}
+h1 {
+  text-align: center;
+}
+.columns {
+  padding: 0.5em;
+  margin-bottom: 0;
+  margin-top: 1em;
+  text-align: center;
+  border-bottom: solid;
+  display: flex;
+  align-items: center;
+  border-color: grey;
+}
+.footer-column-1 {
+  border-right: solid;
+  border-color: grey;
+}
+.footer-column-3 {
+  border-left: solid;
+  border-color: grey;
+}
+.block {
+  text-align: center;
+  text-decoration: none;
+}
+.breadcrumb-list {
+  display: none;
+}
+.toc a {
+  text-decoration: none;
+  color: Black;
+}
+.toc li {
+  padding: 1em;
+  text-decoration: none;
+  list-style: none;
+}
+.next {
+  float: right;
+}
+.previous {
+  float: left;
+}
+.region-sidebar-left,
+.region-sidebar-right {
+  display: inline;
+  float: left;
+  width: 30%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.toc {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
+.region-sidebar-right {
+  float: left;
+  width: 100%;
+  border-left: none;
+}
+.my-navbar li {
+  background-color: white;
+}
+/**
+ * Layout for responsive style through media queries.
+ */
+@media screen and (max-width: 1500px) {
+  .site-logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 980px) {
+  .figure {
+    float: none;
+  }
+  body {
+    width: auto;
+    float: none;
+  }
+  main {
+    width: auto;
+    float: none;
+  }
+  .block {
+    width: auto;
+  }
+}
+@media screen and (max-width: 850px) {
+  .my-navbar {
+    display: none;
+  }
+  .columns {
+    display: block;
+  }
+}
+/**
+ * Show off the regions used in the website, to ease styling.
+ */
+.regions .outer-wrap {
+  background-color: #f4e3c9;
+  border: 1px solid #e3b774;
+}
+.regions .inner-wrap {
+  background-color: #f4e0e9;
+  border: 1px solid #d995b4;
+}
+.regions .region-header-col-1,
+.regions .region-header-col-2,
+.regions .region-header-col-3,
+.regions .region-flash,
+.regions .region-breadcrumb,
+.regions .region-flash-message,
+.regions .region-columns-above,
+.regions .region-main,
+.regions .region-after-main,
+.regions .region-columns-below,
+.regions .region-sidebar-left,
+.regions .region-sidebar-right,
+.regions .region-footer,
+.regions .region-footer-column-1,
+.regions .region-footer-column-2,
+.regions .region-footer-column-3 {
+  background-color: #b5dce1;
+  border: 1px solid #6cbac4;
+  color: #111;
+}
+/**
+ * My own settings, not currently in their own module.
+ */

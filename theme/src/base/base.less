@@ -1,0 +1,52 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorHtml: #262b28;
+@bgColorBody: #fff;
+@colorBody: #333;
+@fontFamilyBody: serif;
+
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+    //display: table;
+    margin: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: @colorBody;
+    background-color: @bgColorBody;
+    font: 100.01%/1 @fontFamilyBody;
+    //display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+// html, body {
+//     height: 100%;
+// }
+
+main {
+    min-height: 50em;
+    margin-top: 0;
+    margin: 8px auto;
+    width: 1035px;
+    padding: 2em;
+    background-color: #e4d9c9;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width:100%;
+}
+
+div {
+    display: block;
+}
