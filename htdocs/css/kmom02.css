@@ -4752,33 +4752,14 @@ template {
 html {
   overflow-y: scroll;
   background-color: white;
-  display: table;
-  margin: auto;
 }
 body {
   color: #333;
   background-color: #fff;
   font: 100.01%/1 serif;
-  display: table-cell;
   vertical-align: middle;
   margin: 0;
   padding: 0;
-}
-html,
-body {
-  height: 100%;
-}
-main {
-  min-height: 70em;
-  margin-top: 0;
-  padding: 2em;
-  background-color: #e4d9c9;
-}
-a {
-  text-decoration: none;
-}
-img {
-  max-width: 100%;
 }
 /**
  * A responsive menu.
@@ -5185,6 +5166,9 @@ h1 {
 @media screen and (max-width: 1500px) {
   .site-logo {
     display: none;
+  }
+  body {
+    padding: 0.5em;
   }
 }
 @media screen and (max-width: 980px) {
