@@ -23,7 +23,9 @@ return [
                 //"css/dbwebb-se.min.css",
                 //"css/kmom01.css",
                 //"css/kmom03.css"
-                "css/04_colorful.css"
+                //"css/04_minimalistic.css"
+                //"css/kmom05.css"
+                "css/kmom06-designelements.css"
 
             ],
             "javascripts" => [

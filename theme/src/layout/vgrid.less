@@ -11,6 +11,9 @@
 /**
  * General layout
  */
+ *{
+     box-sizing: border-box;
+ }
  .row {
      #desinax-vgrid.row();
 
@@ -90,7 +93,7 @@ h1 {
 }
 
 .footer-column {
-    border-bottom: solid;
+    //border-bottom: solid;
     //border-color: #B5C9FF;
     #desinax-vgrid.column(@columns / 3);
 
@@ -111,8 +114,7 @@ h1 {
 }
 
 .block {
- text-align: center;
- text-decoration: none;
+ padding: 2em;
 }
 
 .region-breadcrumb {
@@ -130,8 +132,9 @@ h1 {
  list-style: none;
 }
 
-.region-sidebar-left, .region-sidebar-right {
- #desinax-vgrid.column(6);
+.region-sidebar-left {
+ //#desinax-vgrid.column(6);
+ float: left;
 }
 
 .region-flash {
@@ -148,14 +151,29 @@ h1 {
 }
 
 
-.has-sidebar-left>.article {
+// .has-sidebar-left>.article {
+//     #desinax-vgrid.column(18);
+// }
+
+
+.blog-list-item{
     #desinax-vgrid.column(18);
-    float: left;
+    float: right;
+    margin: 1em;
+}
+
+.blog-post {
+    margin: 1em;
+    padding: 2em;
+}
+
+.blog {
+    #desinax-vgrid.column(6);
+    float: none;
 }
 
 .has-sidebar-right>.article {
     #desinax-vgrid.column(18);
-    float: right;
 }
 
 .region-main {
@@ -163,10 +181,10 @@ h1 {
     float: none;
 }
 
-.figure,
- .right {
-     float: right;
- }
+// .figure,
+//  .right {
+//      float: right;
+//  }
 
  .rm-navbar li {
     // background-color: #8EB35B;
@@ -175,6 +193,7 @@ h1 {
 .next {
     float: right;
 }
+
 
 @media screen and (max-width: 850px) {
     .my-navbar {
@@ -197,5 +216,12 @@ h1 {
     //    border-color: #B5C9FF;
         #desinax-vgrid.column(@columns / 1);
 
+    }
+
+    .has-sidebar {
+    display: none;
+    }
+    .has-sidebar {
+    #desinax-vgrid.column(@columns / 1);
     }
 }

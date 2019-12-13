@@ -5206,7 +5206,7 @@ h1 {
     border-style: none;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .region-sidebar-left,
   .region-sidebar-right {
     float: none;
@@ -5215,6 +5215,7 @@ h1 {
     border: 0;
     clear: both;
     background-color: #e4d9c9;
+    display: none;
   }
 }
 /**

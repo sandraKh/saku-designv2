@@ -4849,6 +4849,9 @@ h4 {
 /**
  * General layout
  */
+* {
+  box-sizing: border-box;
+}
 .row {
   display: block;
   width: 101.04166667%;
@@ -4935,7 +4938,6 @@ h1 {
   text-align: center;
 }
 .footer-column {
-  border-bottom: solid;
   display: inline;
   float: left;
   width: 32.29166667%;
@@ -4956,8 +4958,7 @@ h1 {
   margin-right: 0.52083333%;
 }
 .block {
-  text-align: center;
-  text-decoration: none;
+  padding: 2em;
 }
 .region-breadcrumb {
   display: none;
@@ -4969,13 +4970,8 @@ h1 {
   text-decoration: none;
   list-style: none;
 }
-.region-sidebar-left,
-.region-sidebar-right {
-  display: inline;
+.region-sidebar-left {
   float: left;
-  width: 23.95833333%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
 }
 .region-flash {
   display: inline;
@@ -4991,12 +4987,26 @@ h1 {
 .toc {
   list-style: none;
 }
-.has-sidebar-left > .article {
+.blog-list-item {
   display: inline;
+  float: left;
   width: 73.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+  float: right;
+  margin: 1em;
+}
+.blog-post {
+  margin: 1em;
+  padding: 2em;
+}
+.blog {
+  display: inline;
   float: left;
+  width: 23.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  float: none;
 }
 .has-sidebar-right > .article {
   display: inline;
@@ -5004,7 +5014,6 @@ h1 {
   width: 73.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  float: right;
 }
 .region-main {
   display: inline;
@@ -5013,10 +5022,6 @@ h1 {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   float: none;
-}
-.figure,
-.right {
-  float: right;
 }
 .next {
   float: right;
@@ -5037,6 +5042,16 @@ h1 {
   }
   .footer-column {
     border-bottom: solid;
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+  .has-sidebar {
+    display: none;
+  }
+  .has-sidebar {
     display: inline;
     float: left;
     width: 98.95833333%;
@@ -5341,7 +5356,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
     border-style: none;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .region-sidebar-left,
   .region-sidebar-right {
     float: none;
@@ -5350,6 +5365,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
     border: 0;
     clear: both;
     background-color: #e4d9c9;
+    display: none;
   }
 }
 /**
