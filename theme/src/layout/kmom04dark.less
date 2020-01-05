@@ -1,0 +1,161 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+
+/**
+ * General layout
+ */
+
+ :root {
+  --mainColor: #072248;
+}
+
+ html {
+     overflow-y: scroll;
+     position: relative;
+     min-height: 100%;
+ }
+
+ body {
+     vertical-align: middle;
+     margin: 0;
+     padding: 0;
+    font-family: 'Muli', sans-serif;
+ }
+
+.rm-desktop li a{
+   background:
+      linear-gradient(
+        to bottom, var(--mainColor) 0%,
+        var(--mainColor) 100%
+      );
+     background-position: 0 100%;
+     background-repeat: repeat-x;
+    background-size: 1px 1px;
+   color: #000;
+   text-decoration: none;
+   transition: background-size .4s;
+ }
+
+.rm-desktop li:hover a{
+   background-size: 4px 50px;
+ }
+
+ .region-flash img {
+     width: 100%;
+ }
+
+ .article {
+     font-size: 1.1em;
+     margin-bottom: 1.54em;
+ }
+
+.article li {
+     margin-bottom: 1.54em;
+ }
+
+.toc li {
+     margin-bottom: 1.54em;
+}
+
+h1, h2, h3 {
+    font-family: 'Muli', sans-serif;
+    margin-bottom: 3.08em;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(149,76,25,1) 100%);
+    color: #f8c7a5;
+}
+.article {
+    line-height: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    color: #000;
+}
+
+body {
+    background-color: #954C19
+}
+
+.outer-wrap-footer {
+    background-color: #022100;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+}
+
+.byline_class {
+    background-color: #183762;
+    border-color:  #010C1B;
+    color: white;
+    margin-bottom: 10em;
+}
+
+.outer-wrap-header {
+    background-color: #010C1B;
+}
+
+.inner-wrap-flash {
+    width: 100%;
+}
+
+.columns {
+    margin-bottom: 0;
+}
+
+.columns p {
+    color: #954C19;
+}
+
+.site-footer p {
+    color: #fff;
+}
+
+.footer-column-3 {
+    border-color: #197914;
+}
+
+.footer-column-1 {
+    border-color: #197914;
+}
+
+.footer-column {
+    border-color: #197914;
+}
+
+.rm-navbar li {
+    color: #fff;
+}
+
+rm-default {
+    //background-color: #010C1B;
+}
+
+.row {
+    margin-bottom: 0;
+}
+
+.wrap-sidebar h4 {
+    color: #f8c7a5;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(149,76,25,1) 100%);
+}
+
+li {
+    text-decoration: none;
+}
+
+.toc a {
+    color: #000;
+}
